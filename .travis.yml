@@ -1,0 +1,12 @@
+language: java
+
+jdk: oraclejdk11
+
+script: mvn -e verify
+
+notifications:
+    email:
+      recipients:
+        - aljasones@yandex.ru
+      on_failure: always
+      on_success: never
