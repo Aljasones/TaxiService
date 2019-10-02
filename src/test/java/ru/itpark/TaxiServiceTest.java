@@ -6,7 +6,7 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class TaxiServiceTest {
     @Test
-    public void sumWithoutDiscont() {
+    public void sumWithoutDiscount() {
 
         TaxiService service = new TaxiService();
         int sum = service.count(10);
@@ -14,14 +14,14 @@ public class TaxiServiceTest {
         assertEquals (260, sum);
     }
     @Test
-    public void sumWithDiscont() {
+    public void sumWithDiscount() {
         TaxiService service = new TaxiService();
         int sum = service.count(80);
 
         assertEquals(1577, sum);
     }
     @Test
-    public void sumWithMaxDiscont() {
+    public void sumWithMaxDiscount() {
         TaxiService service = new TaxiService();
         int sum = service.count(200);
 
